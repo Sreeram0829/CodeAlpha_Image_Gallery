@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Premium Image Gallery</h1>
+            <p class="subtitle">Explore our curated collection of stunning images from around the world. Filter by category or use the lightbox for detailed viewing.</p>
+        </header>
+
+        <div class="controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">Cityscapes</button>
+            <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Mountain Landscape">
+                <div class="overlay">
+                    <h3>Mountain Majesty</h3>
+                    <p>Snow-capped peaks at sunrise</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1485872299829-c673f5194813?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="City Skyline">
+                <div class="overlay">
+                    <h3>Urban Jungle</h3>
+                    <p>City skyline at twilight</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="wildlife">
+                <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Fox in Forest">
+                <div class="overlay">
+                    <h3>Wild Fox</h3>
+                    <p>Red fox in autumn forest</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="travel">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Desert Road">
+                <div class="overlay">
+                    <h3>Desert Highway</h3>
+                    <p>Endless road through the desert</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Waterfall">
+                <div class="overlay">
+                    <h3>Tropical Waterfall</h3>
+                    <p>Lush jungle waterfall</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="City Buildings">
+                <div class="overlay">
+                    <h3>Metropolis</h3>
+                    <p>Modern city architecture</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="wildlife">
+                <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Lion">
+                <div class="overlay">
+                    <h3>King of the Jungle</h3>
+                    <p>Lion in golden savanna</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="travel">
+                <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Travel">
+                <div class="overlay">
+                    <h3>Mountain Adventure</h3>
+                    <p>Hiker enjoying mountain view</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Forest">
+                <div class="overlay">
+                    <h3>Enchanted Forest</h3>
+                    <p>Misty morning in the woods</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Premium Image Gallery | Created with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
